@@ -1,9 +1,33 @@
 @extends('templates.base')
 @section('main')
-    <h1>Qesta è la pagina che lista i libri</h1>
-    <ul>
-        @foreach ($movies as $movie)
-            <li>{{ $movie->title }}</li>
-        @endforeach
-    </ul>
+<div class="container">
+    @foreach ($movies as $movie)
+    <div class="card">
+        <div class="title">
+            {{ $movie->title }}
+        </div>
+        <div class="country">
+            {{ $movie->nationality }}
+        </div>
+        <div class="date">
+            {{ $movie->date }}
+        </div>
+        <div class="vote">
+            {{ $movie->vote }}
+        </div>
+    </div>
+    @endforeach
+</div>
 @endsection
+{{-- <style>
+.container {
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.card {
+    background-color: lightblue;
+}
+</style> --}}
