@@ -1,7 +1,5 @@
-<header>
-    <ul>
-        <li>
-            CIAO HEADER
-        </li>
-    </ul>
+<header style="text-align: center">
+    <H1>
+        FILMS
+    </H1>        
 </header>

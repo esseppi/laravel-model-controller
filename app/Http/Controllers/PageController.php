@@ -13,6 +13,6 @@ class PageController extends Controller
         $data = [
             'movies' => $myMovie
         ];
-        return view('homePage', $data);
+        return view('pages.homePage', $data);
     }
 }

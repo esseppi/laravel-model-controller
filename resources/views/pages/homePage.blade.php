@@ -1,4 +1,5 @@
 @extends('templates.base')
+@section('css', './css/app.css')
 @section('main')
 <div class="container">
     @foreach ($movies as $movie)
@@ -10,7 +11,7 @@
             {{ $movie->nationality }}
         </div>
         <div class="date">
-            {{ $movie->date }}
+          {{ $movie->date }}
         </div>
         <div class="vote">
             {{ $movie->vote }}
@@ -19,15 +20,3 @@
     @endforeach
 </div>
 @endsection
-{{-- <style>
-.container {
-    margin: auto;
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-
-}
-.card {
-    background-color: lightblue;
-}
-</style> --}}
